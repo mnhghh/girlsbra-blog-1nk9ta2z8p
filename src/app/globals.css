@@ -255,7 +255,7 @@ p {
 }
 
 /* Grid System */
-.grid {
+.custom-grid {
   @apply grid gap-8;
 }
 
@@ -403,12 +403,14 @@ p {
 }
 
 /* Blog Post Styling */
-.blog-content {
-  @apply prose prose-lg max-w-none;
-  font-family: 'Crimson Text', Georgia, serif;
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: var(--text-primary);
+@layer components {
+  .blog-content {
+    @apply prose prose-lg max-w-none;
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
 }
 
 .blog-content h1 {
